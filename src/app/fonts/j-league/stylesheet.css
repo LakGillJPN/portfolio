@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'JLEAGUE KICK Bold Condensed';
+    src: url('JLEAGUEKICK-BoldCondensed.eot');
+    src: local('JLEAGUE KICK Bold Condensed'), local('JLEAGUEKICK-BoldCondensed'),
+        url('JLEAGUEKICK-BoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('JLEAGUEKICK-BoldCondensed.woff2') format('woff2'),
+        url('JLEAGUEKICK-BoldCondensed.woff') format('woff'),
+        url('JLEAGUEKICK-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
