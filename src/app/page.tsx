@@ -40,7 +40,7 @@ export default function Home() {
 
      
 
-      <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 text-4xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-4xl">
         <div className="text-5xl border-solid border-2 border-red-600 text-center rounded-xl p-4 flex flex-col items-center">
           <span className={jleague.className}>J-League Predictor</span>
           <p className="text-sm p-5">
@@ -68,7 +68,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="text-5xl border-solid border-2 border-red-600 text-center rounded-xl p-4 flex flex-col items-center">
+        <div className="text-5xl border-solid border-2 border-purple-600 text-center rounded-xl p-4 flex flex-col items-center">
           <span className={offside.className}>GamerTalk</span>
           
             <p className="text-sm p-5">
