@@ -20,31 +20,44 @@ export default function Home() {
         {lang === "English" ? "日本語" : "English"}
       </button>
 
-      <h1 className="text-6xl text-center font-bold mb-8 my-20">
+      <h1 className="text-6xl text-center font-bold mb-8 my-20 pt-10">
         {" "}
         {lang === "Japanese"
           ? "ラク ギル  \n ポートフォリオ"
           : "Lak Gill Portfolio"}{" "}
       </h1>
+      <div className="flex flex-col items-center pb-10">
+        <a href="https://github.com/LakGillJPN/j-league-predictor">
+          <Image 
+           src="/images/LI-Logo.png"
+           width={100}
+           height={200}
+           alt="link to LinkedIn"
+          />
+        </a>
+      </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-4xl">
+
+     
+
+      <div className="grid grid-cols-2 sm:grid-cols-2 gap-5 text-4xl">
         <div className="text-5xl border-solid border-2 border-red-600 text-center rounded-xl p-4 flex flex-col items-center">
           <span className={jleague.className}>J-League Predictor</span>
           <p className="text-sm p-5">
             A game where users predict the results of upcoming J-League fixtures
             and earn points based on their accuracy.
           </p>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <Image
               src="/images/j-league-screenshot.png"
-              width={650}
-              height={650}
+              width={600}
+              height={600}
               alt="GamerTalk screenshot"
             />
           </div>
 
           <a href="https://github.com/LakGillJPN/j-league-predictor">
-            <div className="border-solid flex justify-center items-center rounded-xl mx-auto w-17 m-10">
+            <div className="border-solid flex justify-center items-center rounded-xl mx-auto w-17 m-10 p-3 hover:bg-slate-700 bg-slate-600">
               <Image
                 src="/images/github-logo-white.png"
                 width={100}
@@ -55,14 +68,14 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="text-5xl border-solid border-2 border-purple-600 text-center p-4 rounded-xl flex flex-col items-center">
+        <div className="text-5xl border-solid border-2 border-red-600 text-center rounded-xl p-4 flex flex-col items-center">
           <span className={offside.className}>GamerTalk</span>
-          <a href="https://github.com/GamerTalk">
+          
             <p className="text-sm p-5">
               An application that allows gamers to connect with each other with
               the goal of building connections.
             </p>
-            <div className="flex items-center">
+            <div className="flex items-center justify-center">
               <Image
                 src="/images/gamertalk-screenshot.png"
                 width={600}
@@ -70,7 +83,8 @@ export default function Home() {
                 alt="GamerTalk screenshot"
               />
             </div>
-            <div className="border-solid flex justify-center items-center rounded-xl mx-auto w-17 m-10">
+            <a href="https://github.com/GamerTalk">
+            <div className="border-solid flex justify-center items-center rounded-xl mx-auto  m-10 p-3 hover:bg-slate-700 bg-slate-600">
               <Image
                 src="/images/github-logo-white.png"
                 width={100}
