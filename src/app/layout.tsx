@@ -1,3 +1,5 @@
+"use client"
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Offside } from 'next/font/google'
@@ -5,10 +7,6 @@ import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 export const offside = Offside({ subsets: ['latin'], weight:['400']})
-
-export const metadata: Metadata = {
-  title: 'Lak Gill Portfolio',
-}
 
 export const jleague = localFont({
   src: [
