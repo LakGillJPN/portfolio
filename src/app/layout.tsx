@@ -11,11 +11,6 @@ export const offside = Offside({ subsets: ['latin'], weight:['400']})
 export const jleague = localFont({
   src: [
     {
-      path: '../../public/fonts/j-league/JLEAGUEKICK-BoldCondensed.eot',
-      weight: 'bold',
-      style: 'normal',
-    },
-    {
       path: '../../public/fonts/j-league/JLEAGUEKICK-BoldCondensed.ttf',
       weight: 'bold',
       style: 'normal',
