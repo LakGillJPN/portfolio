@@ -3,12 +3,12 @@
 import { useState } from "react";
 import { offside, jleague } from "./layout";
 import Image from "next/image";
+import Footer from "./components/Footer";
 
 
 
 export default function Home() {
   const [lang, setLang] = useState<string>("English");
-  const jpHeading =  `ラク ギル ポートフォリオ`
 
   const changeLang = () => {
     return lang === "English" ? setLang("Japanese") : setLang("English");
@@ -52,7 +52,7 @@ export default function Home() {
             {lang === "English" ? "A game where users predict the results of upcoming J-League fixtures and earn points based on their accuracy." 
             : "Jリーグの勝敗を予想し、ポイントを獲得するゲーム。"}
           </p>
-          <p className="text-sm p-5 flex-grow flex items-center justify-center">
+          <p className="text-lg p-5 flex-grow flex items-center justify-center">
           <a className="text-blue-500 underline" href="https://j-league-predictor.vercel.app/"> 
              https://j-league-predictor.vercel.app/</a></p>
           <div className="flex items-center justify-center">
@@ -141,7 +141,7 @@ export default function Home() {
               {lang === 'English' ? "An application that allows gamers to connect with each other with the goal of building connections."
               : "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。"}
             </p>
-            <p className="text-sm p-5 flex-grow flex items-center justify-center ">
+            <p className="text-lg p-5 flex-grow flex items-center justify-center ">
               <a className="text-blue-500 underline" href="https://gamertalk.onrender.com/">
               https://gamertalk.onrender.com/</a></p>
 
@@ -218,6 +218,8 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <Footer text={lang === 'English' ? "Powered by Tailwind CSS & Next.JS" : "Tailwind CSSとNext JSによって動作します"} />
     </div>
   );
 }
+
