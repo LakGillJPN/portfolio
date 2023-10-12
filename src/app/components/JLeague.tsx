@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { offside, jleague } from ".././layout";
+import { jleague } from ".././layout";
 
 interface JLeagueProps {
   text: string;
