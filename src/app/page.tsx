@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { offside, jleague } from "./layout";
 import Image from "next/image";
-import Footer from "./components/Footer";
 
 
 
@@ -218,7 +217,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <Footer text={lang === 'English' ? "Powered by Tailwind CSS & Next.JS" : "Tailwind CSSとNext JSによって動作します"} />
+      {/* <Footer text={lang === 'English' ? "Powered by Tailwind CSS & Next.JS" : "Tailwind CSSとNext JSによって動作します"} /> */}
     </div>
   );
 }
