@@ -32,7 +32,7 @@ export default function Home() {
           )}
       </h1>
       <div className="flex flex-col items-center pb-10">
-        <a href="https://github.com/LakGillJPN/j-league-predictor">
+        <a className="hover:bg-slate-200 bg-white p-3 rounded-md" href="https://www.linkedin.com/in/lak-gill/">
           <Image 
            src="/images/LI-Logo.png"
            width={100}
