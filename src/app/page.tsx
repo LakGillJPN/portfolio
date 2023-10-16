@@ -31,12 +31,23 @@ export default function Home() {
             "Lak Gill Portfolio"
           )}
       </h1>
-      <div className="flex flex-col items-center pb-10">
-        <a className="hover:bg-slate-200 bg-white p-3 rounded-md" href="https://www.linkedin.com/in/lak-gill/">
+      
+      <div className="flex flex-row justify-center items-center pb-10">
+      
+
+        <a href="https://www.linkedin.com/in/lak-gill/">
           <Image 
-           src="/images/LI-Logo.png"
-           width={100}
-           height={200}
+           src="/images/ln-logo.png"
+           width={50}
+           height={50}
+           alt="link to LinkedIn"
+          />
+        </a>
+        <a className="pl-4" href="https://www.twitter.com/LakGill88">
+          <Image 
+           src="/images/x-logo-white.png"
+           width={50}
+           height={50}
            alt="link to LinkedIn"
           />
         </a>
