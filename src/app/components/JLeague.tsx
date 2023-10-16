@@ -53,13 +53,7 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
         alt="nodejs logo"
         style={{ margin: '0 10px',  marginBottom: '10px' }} 
         />
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" 
-        width={50}
-        height={50}
-        alt="firebase logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
+       
         <Image 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" 
         width={50}
@@ -73,6 +67,14 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
         height={50}
         alt="cypress logo"
         style={{ margin: '0 10px',  marginBottom: '10px' }} 
+        />
+
+        <Image 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" 
+        width={50}
+        height={50}
+        alt="firebase logo"
+        style={{ margin: '0 10px', marginBottom: '10px'  }} 
         />
         
         <Image 
