@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import { jleague } from ".././layout";
+import ReactLogo from '../logos/frontend/ReactLogo';
+import TypeScriptLogo from '../logos/frontend/TypeScriptLogo';
 
 interface JLeagueProps {
   text: string;
@@ -25,20 +27,8 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
       />
     </div>
     <div className="flex flex-wrap pt-5">
-      <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
-        width={50}
-        height={50}
-        alt="React logo"
-        style={{ margin: '0 10px', marginBottom: '10px'}} 
-        />
-      <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-        width={50}
-        height={50}
-        alt="TypeScript logo"
-        style={{ margin: '0 10px',marginBottom: '10px' }} 
-        />
+      <ReactLogo/>
+      <TypeScriptLogo/>
         <Image 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
         width={50}
