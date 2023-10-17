@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { jleague } from ".././layout";
 import ReactLogo from '../logos/frontend/ReactLogo';
 import TypeScriptLogo from '../logos/frontend/TypeScriptLogo';
+import NodeJSLogo from '../logos/backend/NodeJSLogo';
+import ExpressLogo from '../logos/backend/ExpressLogo';
 
 interface JLeagueProps {
   text: string;
@@ -29,20 +31,8 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
     <div className="flex flex-wrap pt-5">
       <ReactLogo/>
       <TypeScriptLogo/>
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
-        width={50}
-        height={50}
-        alt="nodejs logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-        <Image 
-        src="/images/express-white-icon.png" 
-        width={50}
-        height={40}
-        alt="nodejs logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
+      <NodeJSLogo/>
+      <ExpressLogo/>
        
         <Image 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" 
