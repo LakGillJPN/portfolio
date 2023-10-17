@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { jleague } from ".././layout";
 import ReactLogo from '../logos/frontend/ReactLogo';
-import TypeScriptLogo from '../logos/frontend/TypeScriptLogo';
+import TypeScriptLogo from '../logos/languages/TypeScriptLogo';
 import NodeJSLogo from '../logos/backend/NodeJSLogo';
 import ExpressLogo from '../logos/backend/ExpressLogo';
 import JestLogo from '../logos/testing/JestLogo';

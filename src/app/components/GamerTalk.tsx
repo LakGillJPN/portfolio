@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import { offside } from ".././layout";
+import NextJSLogo from '../logos/frontend/NextJSLogo';
+import TypeScriptLogo from '../logos/languages/TypeScriptLogo';
+import PythonLogo from '../logos/languages/PythonLogo';
 
 interface GamerTalkProps {
   text: string;
@@ -28,27 +31,9 @@ const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
       </div>
 
       <div className="flex flex-wrap pt-5">
-      <Image 
-        src="/images/nextjs_white_icon.png" 
-        width={50}
-        height={50}
-        alt="Next JS logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
-      <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-        width={50}
-        height={50}
-        alt="TypeScript logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" 
-        width={50}
-        height={50}
-        alt="Python logo" 
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
+      <NextJSLogo/>
+      <TypeScriptLogo/>
+      <PythonLogo/>
          <Image 
         src="/images/django-logo.png" 
         width={40}
