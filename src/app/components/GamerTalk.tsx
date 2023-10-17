@@ -4,6 +4,11 @@ import { offside } from ".././layout";
 import NextJSLogo from '../logos/frontend/NextJSLogo';
 import TypeScriptLogo from '../logos/languages/TypeScriptLogo';
 import PythonLogo from '../logos/languages/PythonLogo';
+import CypressLogo from '../logos/testing/CypressLogo';
+import FirebaseLogo from '../logos/misc/FirebaseLogo';
+import PostgresLogo from '../logos/datebase/PostgresLogo';
+import DjnagoLogo from '../logos/backend/DjnagoLogo';
+import GitHubLogo from '../logos/misc/GitHubLogo';
 
 interface GamerTalkProps {
   text: string;
@@ -31,47 +36,18 @@ const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
       </div>
 
       <div className="flex flex-wrap pt-5">
-      <NextJSLogo/>
-      <TypeScriptLogo/>
-      <PythonLogo/>
-         <Image 
-        src="/images/django-logo.png" 
-        width={40}
-        height={30}
-        alt="django logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
-        <Image 
-        src="/images/cypress-icon.png" 
-        width={50}
-        height={50}
-        alt="cypress logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-         <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" 
-        width={50}
-        height={50}
-        alt="firebase logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" 
-        width={50}
-        height={50}
-        alt="Postgres logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-    </div>
+        <NextJSLogo/>
+        <TypeScriptLogo/>
+        <PythonLogo/>
+        <DjnagoLogo/>
+        <CypressLogo/>
+        <FirebaseLogo/>
+        <PostgresLogo/>
+      </div>
 
       <a href="https://github.com/GamerTalk">
       <div className="border-2 border-solid flex justify-center items-center rounded-xl mx-auto  m-10 p-3 hover:bg-slate-700 bg-slate-600">
-        <Image
-          src="/images/github-logo-white.png"
-          width={100}
-          height={100}
-          alt="GitHub logo"
-        />
+        <GitHubLogo/>
       </div>
     </a>
   </div>

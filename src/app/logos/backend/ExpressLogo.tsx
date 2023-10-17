@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function ExpressLogo() {
   return (
-    <Image 
+  <Image 
     src="/images/express-white-icon.png" 
     width={50}
     height={40}
