@@ -7,6 +7,8 @@ import NodeJSLogo from '../logos/backend/NodeJSLogo';
 import ExpressLogo from '../logos/backend/ExpressLogo';
 import JestLogo from '../logos/testing/JestLogo';
 import CypressLogo from '../logos/testing/CypressLogo';
+import FirebaseLogo from '../logos/misc/FirebaseLogo';
+import PostgresLogo from '../logos/datebase/PostgresLogo';
 
 interface JLeagueProps {
   text: string;
@@ -37,22 +39,8 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
       <ExpressLogo/>
       <JestLogo/>
       <CypressLogo/>
-
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" 
-        width={50}
-        height={50}
-        alt="firebase logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
-        
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" 
-        width={50}
-        height={50}
-        alt="Postgres logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
+      <FirebaseLogo/>
+      <PostgresLogo/>
     </div>
 
     <a href="https://github.com/LakGillJPN/j-league-predictor">
