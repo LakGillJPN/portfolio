@@ -5,6 +5,8 @@ import ReactLogo from '../logos/frontend/ReactLogo';
 import TypeScriptLogo from '../logos/frontend/TypeScriptLogo';
 import NodeJSLogo from '../logos/backend/NodeJSLogo';
 import ExpressLogo from '../logos/backend/ExpressLogo';
+import JestLogo from '../logos/testing/JestLogo';
+import CypressLogo from '../logos/testing/CypressLogo';
 
 interface JLeagueProps {
   text: string;
@@ -33,21 +35,8 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
       <TypeScriptLogo/>
       <NodeJSLogo/>
       <ExpressLogo/>
-       
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" 
-        width={50}
-        height={50}
-        alt="jest logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-        <Image 
-        src="/images/cypress-icon.png" 
-        width={50}
-        height={50}
-        alt="cypress logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
+      <JestLogo/>
+      <CypressLogo/>
 
         <Image 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" 
