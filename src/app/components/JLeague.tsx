@@ -9,6 +9,7 @@ import JestLogo from '../logos/testing/JestLogo';
 import CypressLogo from '../logos/testing/CypressLogo';
 import FirebaseLogo from '../logos/misc/FirebaseLogo';
 import PostgresLogo from '../logos/datebase/PostgresLogo';
+import GitHubLogo from '../logos/misc/GitHubLogo';
 
 interface JLeagueProps {
   text: string;
@@ -29,7 +30,7 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
         src="/images/J-League-Fullscreen.png"
         width={600}
         height={600}
-        alt="GamerTalk screenshot"
+        alt="J-League screenshot"
       />
     </div>
     <div className="flex flex-wrap pt-5">
@@ -45,12 +46,7 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
 
     <a href="https://github.com/LakGillJPN/j-league-predictor">
       <div className=" border-2 border-solid flex justify-center items-center rounded-xl mx-auto w-17 m-10 p-3 hover:bg-slate-700 bg-slate-600">
-        <Image
-          src="/images/github-logo-white.png"
-          width={100}
-          height={100}
-          alt="GitHub logo"
-        />
+        <GitHubLogo/>
       </div>
     </a>
   </div>
