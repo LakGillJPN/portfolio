@@ -1,6 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
 import { jleague } from ".././layout";
+import ReactLogo from '../logos/frontend/ReactLogo';
+import TypeScriptLogo from '../logos/languages/TypeScriptLogo';
+import NodeJSLogo from '../logos/backend/NodeJSLogo';
+import ExpressLogo from '../logos/backend/ExpressLogo';
+import JestLogo from '../logos/testing/JestLogo';
+import CypressLogo from '../logos/testing/CypressLogo';
+import FirebaseLogo from '../logos/misc/FirebaseLogo';
+import PostgresLogo from '../logos/datebase/PostgresLogo';
+import GitHubLogo from '../logos/misc/GitHubLogo';
 
 interface JLeagueProps {
   text: string;
@@ -21,79 +30,23 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
         src="/images/J-League-Fullscreen.png"
         width={600}
         height={600}
-        alt="GamerTalk screenshot"
+        alt="J-League screenshot"
       />
     </div>
     <div className="flex flex-wrap pt-5">
-      <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
-        width={50}
-        height={50}
-        alt="React logo"
-        style={{ margin: '0 10px', marginBottom: '10px'}} 
-        />
-      <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-        width={50}
-        height={50}
-        alt="TypeScript logo"
-        style={{ margin: '0 10px',marginBottom: '10px' }} 
-        />
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
-        width={50}
-        height={50}
-        alt="nodejs logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-        <Image 
-        src="/images/express-white-icon.png" 
-        width={50}
-        height={40}
-        alt="nodejs logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-       
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" 
-        width={50}
-        height={50}
-        alt="jest logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-        <Image 
-        src="/images/cypress-icon.png" 
-        width={50}
-        height={50}
-        alt="cypress logo"
-        style={{ margin: '0 10px',  marginBottom: '10px' }} 
-        />
-
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" 
-        width={50}
-        height={50}
-        alt="firebase logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
-        
-        <Image 
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" 
-        width={50}
-        height={50}
-        alt="Postgres logo"
-        style={{ margin: '0 10px', marginBottom: '10px'  }} 
-        />
+      <ReactLogo/>
+      <TypeScriptLogo/>
+      <NodeJSLogo/>
+      <ExpressLogo/>
+      <JestLogo/>
+      <CypressLogo/>
+      <FirebaseLogo/>
+      <PostgresLogo/>
     </div>
 
     <a href="https://github.com/LakGillJPN/j-league-predictor">
       <div className=" border-2 border-solid flex justify-center items-center rounded-xl mx-auto w-17 m-10 p-3 hover:bg-slate-700 bg-slate-600">
-        <Image
-          src="/images/github-logo-white.png"
-          width={100}
-          height={100}
-          alt="GitHub logo"
-        />
+        <GitHubLogo/>
       </div>
     </a>
   </div>
