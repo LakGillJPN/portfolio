@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { offside, jleague } from "./layout";
+import {poppins } from "./layout";
 import Image from "next/image";
 import Footer from "./components/Footer";
 import JLeague from "./components/JLeague";
@@ -64,6 +64,20 @@ export default function Home() {
         <GamerTalk text={lang === 'English' ? "An application that allows gamers to connect with each other with the goal of building connections."
               : "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。"} />
       </div>
+
+      <div className="border-solid border-2 border-white-600 my-10 flex flex-col items-center justify-center">
+        <h1 className="text-4xl p-10">Freelance Work</h1>
+        <Image 
+           src="/images/mamoru.png"
+           width={50}
+           height={50}
+           alt="Mamoru Icon"
+        />
+        <p className={poppins.className}>mamoru</p>
+        <p> {lang === 'English' ? "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more." 
+        : "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。"}</p>
+      </div>
+
       <Footer text={lang === 'English' ? "Powered by Tailwind CSS & Next.JS" : "Tailwind CSSとNext JSによって動作します"} />
     </div> 
   );
