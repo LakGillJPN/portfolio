@@ -1,23 +1,29 @@
 type Language = {
-  header: string;
   button: string;
   JLeague: string;
   GamerTalk: string;
+  freelance: string;
+  mamoru: string;
+  footer: string;
 };
 
 
 const languages: Record<string, Language> = {
   English: {
-    header: 'Lak Gill Portfolio',
     button: '日本語',
     JLeague: "A game where users predict the results of upcoming J-League fixtures and earn points based on their accuracy." ,
-    GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections."
+    GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections.",
+    freelance: "Contributions",
+    mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
+    footer:  "Powered by Tailwind CSS & Next.JS" 
   },
   Japanese: {
-    header: 'ラク ギル ポートフォリオ',
     button: 'English',
     JLeague: "Jリーグの勝敗を予想し、ポイントを獲得するゲーム。",
-    GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。"
+    GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。",
+    freelance: "フリーランスの仕事",
+    mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
+    footer: "Tailwind CSSとNext JSによって動作します"
   },
 };
 
