@@ -1,8 +1,6 @@
 import Image from "next/image";
 
-import React from 'react'
-
-export default function NextJSLogo() {
+export default function NextJSLogo({ }) {
   return (
     <Image 
       src="/images/nextjs_white_icon.png" 
