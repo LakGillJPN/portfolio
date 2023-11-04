@@ -34,7 +34,6 @@ export default function Home() {
       </h1>
 
       <div className="flex flex-row justify-center items-center pb-10">
-    
         <a href="https://www.linkedin.com/in/lak-gill/">
           <Image 
            src="/images/ln-logo.png"
@@ -62,9 +61,7 @@ export default function Home() {
 
       <h1 className="text-4xl pt-10 flex flex-col items-center justify-center underline"  >{languages[lang].freelance}</h1>
 
-      <div className="my-5 flex flex-col items-center justify-center rounded-xl">
-        
-        
+      <div className="my-5 flex flex-col items-center justify-center rounded-xl"> 
         <Image 
            src="/images/mamoru.png"
            width={70}
@@ -75,6 +72,7 @@ export default function Home() {
         <a className="text-blue-500 underline" href="http://app.mamoru.earth">
         http://app.mamoru.earth</a>
         <p className="p-10"> {languages[lang].mamoru}</p>
+
       </div>
 
       <Footer text={languages[lang].footer} />

@@ -24,20 +24,18 @@ const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
     <PostgresLogo key="postgres"/>
   ]
 
-
   return (
     <ProjectFramework 
-    title="GamerTalk"
-    font={offside.className}
-    text={text}
-    url="https://gamertalk.onrender.com/"
-    imageSrc="/images/Gamertalk-fullscreen.png"
-    logos={logos}
-    githubUrl="https://github.com/GamerTalk"
-    borderColor="border-purple-600" 
+      title="GamerTalk"
+      font={offside.className}
+      text={text}
+      url="https://gamertalk.onrender.com/"
+      imageSrc="/images/Gamertalk-fullscreen.png"
+      logos={logos}
+      githubUrl="https://github.com/GamerTalk"
+      borderColor="border-purple-600" 
     />
   )
 }
-
 
 export default GamerTalk
