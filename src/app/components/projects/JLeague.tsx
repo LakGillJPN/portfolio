@@ -8,7 +8,7 @@ import JestLogo from '../../logos/testing/JestLogo';
 import CypressLogo from '../../logos/testing/CypressLogo';
 import FirebaseLogo from '../../logos/misc/FirebaseLogo';
 import PostgresLogo from '../../logos/datebase/PostgresLogo';
-import ProjectFramework from '../ProjectFramework'
+import ProjectFramework from '../Framework'
 
 interface JLeagueProps {
   text: string;

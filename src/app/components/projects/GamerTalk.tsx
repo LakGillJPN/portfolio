@@ -7,7 +7,7 @@ import CypressLogo from '../../logos/testing/CypressLogo';
 import FirebaseLogo from '../../logos/misc/FirebaseLogo';
 import PostgresLogo from '../../logos/datebase/PostgresLogo';
 import DjnagoLogo from '../../logos/backend/DjnagoLogo';
-import ProjectFramework from '../ProjectFramework';
+import ProjectFramework from '../Framework';
 
 interface GamerTalkProps {
   text: string;
