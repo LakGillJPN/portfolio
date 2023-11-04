@@ -55,7 +55,7 @@ export default function Home() {
       
       {/* <h1 className="text-4xl p-10 flex flex-col items-left underline j">PROJECTS</h1> */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-4xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
       </div>
