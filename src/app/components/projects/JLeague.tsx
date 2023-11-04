@@ -16,14 +16,14 @@ interface JLeagueProps {
 
 const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
   const logos = [ 
-    <ReactLogo/>,
-    <TypeScriptLogo/>,
-    <NodeJSLogo/>,
-    <ExpressLogo/>,
-    <JestLogo/>,
-    <CypressLogo/>,
-    <FirebaseLogo/>,
-    <PostgresLogo/>
+    <ReactLogo key="react"/>,
+    <TypeScriptLogo key="typescript"/>,
+    <NodeJSLogo key="nodejs"/>,
+    <ExpressLogo key="express"/>,
+    <JestLogo key="jest"/>,
+    <CypressLogo key="cypress"/>,
+    <FirebaseLogo key="firebase"/>,
+    <PostgresLogo key="postgres"/>
   ]
 
   return (

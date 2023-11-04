@@ -14,13 +14,16 @@ interface GamerTalkProps {
 }
 
 const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
-  const logos = [  <NextJSLogo/>,
-  <TypeScriptLogo/>,
-  <PythonLogo/>,
-  <DjnagoLogo/>,
-  <CypressLogo/>,
-  <FirebaseLogo/>,
-  <PostgresLogo/>]
+  const logos = [  
+    <NextJSLogo key="nextjs"/>,
+    <TypeScriptLogo key="typescript"/>,
+    <PythonLogo key="python"/>,
+    <DjnagoLogo key="django"/>,
+   <CypressLogo key="cypress"/>,
+    <FirebaseLogo key="firebase"/>,
+    <PostgresLogo key="postgres"/>
+  ]
+
 
   return (
     <ProjectFramework 
