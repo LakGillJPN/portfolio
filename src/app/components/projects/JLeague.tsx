@@ -15,26 +15,28 @@ interface JLeagueProps {
 }
 
 const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
-  const logos = [ <ReactLogo/>,
-  <TypeScriptLogo/>,
-  <NodeJSLogo/>,
-  <ExpressLogo/>,
-  <JestLogo/>,
-  <CypressLogo/>,
-  <FirebaseLogo/>,
-  <PostgresLogo/>]
+  const logos = [ 
+    <ReactLogo/>,
+    <TypeScriptLogo/>,
+    <NodeJSLogo/>,
+    <ExpressLogo/>,
+    <JestLogo/>,
+    <CypressLogo/>,
+    <FirebaseLogo/>,
+    <PostgresLogo/>
+  ]
 
   return (
-      <ProjectFramework
-        title="J-League Predictor"
-        font={jleague.className}
-        text={text}
-        url="https://j-league-predictor.vercel.app/"
-        imageSrc="/images/J-League-Fullscreen.png"
-        logos={logos}
-        githubUrl="https://github.com/LakGillJPN/j-league-predictor"
-        borderColor="red"
-      />
+    <ProjectFramework
+      title="J-League Predictor"
+      font={jleague.className}
+      text={text}
+      url="https://j-league-predictor.vercel.app/"
+      imageSrc="/images/J-League-Fullscreen.png"
+      logos={logos}
+      githubUrl="https://github.com/LakGillJPN/j-league-predictor"
+      borderColor="red"
+    />
   )
 }
 
