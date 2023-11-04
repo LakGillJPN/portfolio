@@ -33,7 +33,7 @@ export default function Home() {
             "Lak Gill Portfolio"
           )}
       </h1>
-      
+
       <div className="flex flex-row justify-center items-center pb-10">
       
 
@@ -54,16 +54,18 @@ export default function Home() {
           />
         </a>
       </div>
-
-
+      
+      <h1 className="text-4xl p-10 flex flex-col items-center justify-center">Projects</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 text-4xl">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
       </div>
 
+      <h1 className="text-4xl p-10 flex flex-col items-center justify-center"  >{languages[lang].freelance}</h1>
+
       <div className="border-solid border-2 border-white-600 my-10 flex flex-col items-center justify-center rounded-xl">
-        <h1 className="text-4xl p-10">{languages[lang].freelance}</h1>
+        
         
         <Image 
            src="/images/mamoru.png"
