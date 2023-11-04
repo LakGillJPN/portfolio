@@ -1,14 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import { offside } from ".././layout";
-import NextJSLogo from '../logos/frontend/NextJSLogo';
-import TypeScriptLogo from '../logos/languages/TypeScriptLogo';
-import PythonLogo from '../logos/languages/PythonLogo';
-import CypressLogo from '../logos/testing/CypressLogo';
-import FirebaseLogo from '../logos/misc/FirebaseLogo';
-import PostgresLogo from '../logos/datebase/PostgresLogo';
-import DjnagoLogo from '../logos/backend/DjnagoLogo';
-import GitHubLogo from '../logos/misc/GitHubLogo';
+import { offside } from "../../layout";
+import NextJSLogo from '../../logos/frontend/NextJSLogo';
+import TypeScriptLogo from '../../logos/languages/TypeScriptLogo';
+import PythonLogo from '../../logos/languages/PythonLogo';
+import CypressLogo from '../../logos/testing/CypressLogo';
+import FirebaseLogo from '../../logos/misc/FirebaseLogo';
+import PostgresLogo from '../../logos/datebase/PostgresLogo';
+import DjnagoLogo from '../../logos/backend/DjnagoLogo';
+import GitHubLogo from '../../logos/misc/GitHubLogo';
 
 interface GamerTalkProps {
   text: string;

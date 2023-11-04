@@ -4,8 +4,8 @@ import { useState } from "react";
 import {poppins } from "./layout";
 import Image from "next/image";
 import Footer from "./components/Footer";
-import JLeague from "./components/JLeague";
-import GamerTalk from "./components/GamerTalk";
+import JLeague from "./components/projects/JLeague";
+import GamerTalk from "./components/projects/GamerTalk";
 import languages from "./components/langData";
 
 export default function Home() {
