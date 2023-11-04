@@ -19,7 +19,7 @@ const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
     <TypeScriptLogo key="typescript"/>,
     <PythonLogo key="python"/>,
     <DjnagoLogo key="django"/>,
-   <CypressLogo key="cypress"/>,
+    <CypressLogo key="cypress"/>,
     <FirebaseLogo key="firebase"/>,
     <PostgresLogo key="postgres"/>
   ]
@@ -34,7 +34,7 @@ const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
     imageSrc="/images/Gamertalk-fullscreen.png"
     logos={logos}
     githubUrl="https://github.com/GamerTalk"
-    borderColor="purple"  
+    borderColor="border-purple-600" 
     />
   )
 }

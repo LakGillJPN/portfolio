@@ -24,7 +24,7 @@ const ProjectFramework: React.FC<CommonProps> = ({
   borderColor,
 }) => {
   return (
-    <div className={`text-5xl border-solid border-2 border-${borderColor}-600 text-center rounded-xl p-4 flex flex-col items-center`}>
+    <div className={`text-5xl border-solid border-2 ${borderColor} text-center rounded-xl p-4 flex flex-col items-center`}>
       <p className="h-20">
         <span className={font}>{title}</span>
       </p>

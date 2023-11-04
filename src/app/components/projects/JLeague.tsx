@@ -35,7 +35,7 @@ const JLeague: React.FC<JLeagueProps> = ({ text }) =>  {
       imageSrc="/images/J-League-Fullscreen.png"
       logos={logos}
       githubUrl="https://github.com/LakGillJPN/j-league-predictor"
-      borderColor="red"
+      borderColor="border-red-600" 
     />
   )
 }
