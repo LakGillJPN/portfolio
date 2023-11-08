@@ -7,7 +7,7 @@ interface FooterProps {
 
 const Header: React.FC<FooterProps> = ({text} ) => {
   return (
-    <div className="text-2xl font-bold p-7 bg-grey-800 border-2 flex" >  {text}
+    <div className="text-2xl font-bold p-5 bg-grey-800  flex" >  {text}
       <a href="https://www.linkedin.com/in/lak-gill/">
           <Image 
            src="/images/li-logo-white.png"

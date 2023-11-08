@@ -25,7 +25,7 @@ export default function Home() {
         {languages[lang].button}
       </button>
 
-      <h1 className="text-5xl text-center font-bold mb-8 my-20 pt-10">
+      <h1 className="text-5xl text-center font-bold mb-8 my-16 pb-5">
         {lang === "Japanese" ? (
           <span>
             ラク ギル <br /> ポートフォリオ
@@ -35,25 +35,7 @@ export default function Home() {
           )}
       </h1>
 
-      <div className="flex flex-row justify-center items-center pb-10">
-        <a href="https://www.linkedin.com/in/lak-gill/">
-          <Image 
-           src="/images/li-logo-white.png"
-           width={50}
-           height={50}
-           alt="link to LinkedIn"
-          />
-        </a>
-        <a className="pl-4" href="https://www.twitter.com/LakGill88">
-          <Image 
-           src="/images/x-logo-white.png"
-           width={50}
-           height={50}
-           alt="link to LinkedIn"
-          />
-        </a>
-      </div>
-      
+     
       {/* <h1 className="text-4xl p-10 flex flex-col items-left underline j">PROJECTS</h1> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl">
