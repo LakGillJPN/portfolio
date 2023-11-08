@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import JLeague from "./components/projects/JLeague";
 import GamerTalk from "./components/projects/GamerTalk";
 import languages from "./components/langData";
+import Header from "./components/Header";
 
 export default function Home() {
   const [lang, setLang] = useState<string>("English");
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <div className="text-white">
+       <Header text=""/>
       <button
         onClick={changeLang}
         className="text-2xl font-bold p-4 border-2 rounded-xl absolute top-0 right-0 m-4 hover:bg-slate-700 bg-slate-600">
@@ -36,7 +38,7 @@ export default function Home() {
       <div className="flex flex-row justify-center items-center pb-10">
         <a href="https://www.linkedin.com/in/lak-gill/">
           <Image 
-           src="/images/ln-logo.png"
+           src="/images/li-logo-white.png"
            width={50}
            height={50}
            alt="link to LinkedIn"
