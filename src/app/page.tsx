@@ -21,7 +21,7 @@ export default function Home() {
        <Header text=""/>
       <button
         onClick={changeLang}
-        className="text-2xl font-bold p-4 border-2 rounded-xl absolute top-0 right-0 m-4 hover:bg-slate-700 bg-slate-600">
+        className="text-2xl font-bold p-3 border-2 rounded-xl absolute top-0 right-0 m-4 hover:bg-slate-700 bg-slate-600">
         {languages[lang].button}
       </button>
 
@@ -53,7 +53,7 @@ export default function Home() {
            alt="Mamoru Icon"
         />
         <p className={poppins.className}>mamoru</p>
-        <a className="text-blue-500 underline" href="http://app.mamoru.earth">
+        <a className="text-blue-500 underline" href="http://app.mamoru.earth" target="_blank">
         http://app.mamoru.earth</a>
         <p className="p-10"> {languages[lang].mamoru}</p>
 
