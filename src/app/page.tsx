@@ -53,7 +53,7 @@ export default function Home() {
            alt="Mamoru Icon"
         />
         <p className={poppins.className}>mamoru</p>
-        <a className="text-blue-500 underline" href="http://app.mamoru.earth">
+        <a className="text-blue-500 underline" href="http://app.mamoru.earth" target="_blank">
         http://app.mamoru.earth</a>
         <p className="p-10"> {languages[lang].mamoru}</p>
 
