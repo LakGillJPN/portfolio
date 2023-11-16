@@ -18,12 +18,7 @@ export default function Home() {
 
   return (
     <div className="text-white">
-       <Header text=""/>
-      <button
-        onClick={changeLang}
-        className="text-2xl font-bold p-3 border-2 rounded-xl absolute top-0 right-0 m-4 hover:bg-slate-700 bg-slate-600">
-        {languages[lang].button}
-      </button>
+       <Header text="" changeFunc={changeLang} lang={lang}/>
 
       <h1 className="text-5xl text-center font-bold mb-8 my-16 pb-5">
         {lang === "Japanese" ? (
@@ -35,7 +30,6 @@ export default function Home() {
           )}
       </h1>
 
-     
       {/* <h1 className="text-4xl p-10 flex flex-col items-left underline j">PROJECTS</h1> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl">
