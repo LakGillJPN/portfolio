@@ -28,8 +28,8 @@ const ProjectFramework: React.FC<CommonProps> = ({
       <p className="h-20">
         <span className={font}>{title}</span>
       </p>
-      <p className="text-sm p-5 flex-grow flex items-center justify-center">{text}</p>
-      <p className="text-lg p-5 flex-grow flex items-center justify-center">
+      <p className="text-sm p-5 flex items-center justify-center">{text}</p>
+      <p className="text-lg p-5 flex items-center justify-center">
         <a className="text-blue-500 underline" href={url} target="_blank">
           {url}
         </a>

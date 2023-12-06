@@ -12,7 +12,7 @@ interface SakuraSignalProps {
 }
 
 
-export default function SakuraSignal() {
+const SakuraSignal: React.FC<SakuraSignalProps> = ({ text }) =>  {
   const logos = [ 
     <ReactLogo key="react"/>,
     <TypeScriptLogo key="typescript"/>,
@@ -23,14 +23,16 @@ export default function SakuraSignal() {
 
   return (
     <ProjectFramework 
-    title="SakuraSignal"
-    font={quicksand.className}
-    text={text}
-    url="https://gamertalk.onrender.com/"
-    imageSrc="/images/Gamertalk-fullscreen.png"
-    logos={logos}
-    githubUrl="https://github.com/GamerTalk"
-    borderColor="border-pink-600" 
+      title="SakuraSignal"
+      font={quicksand.className}
+      text={text}
+      url="https://phone-review-app.onrender.com"
+      imageSrc="/images/SakuraSignal-fullscreen.png"
+      logos={logos}
+      githubUrl="https://github.com/Phone-Review-App/Phone-Review-App"
+      borderColor="border-pink-600" 
   />
   )
 }
+
+export default SakuraSignal

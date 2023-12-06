@@ -6,6 +6,7 @@ import Image from "next/image";
 import Footer from "./components/Footer";
 import JLeague from "./components/projects/JLeague";
 import GamerTalk from "./components/projects/GamerTalk";
+import SakuraSignal from "./components/projects/SakuraSignal";
 import languages from "./components/langData";
 import Header from "./components/Header";
 
@@ -32,9 +33,10 @@ export default function Home() {
 
       {/* <h1 className="text-4xl p-10 flex flex-col items-left underline j">PROJECTS</h1> */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl">
+      <div className="grid grid-cols-1 sm:grid-cols-3 px-2 gap-5 text-4xl">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
+        <SakuraSignal text={languages[lang].SakuraSignal} />
       </div>
 
       <h1 className="text-4xl pt-10 flex flex-col items-center justify-center underline"  >{languages[lang].freelance}</h1>
