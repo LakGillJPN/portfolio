@@ -37,7 +37,7 @@ export default function Home() {
         <GamerTalk text={languages[lang].GamerTalk} />
       </div>
 
-      <h1 className="text-4xl pt-10 flex flex-col items-center justify-center underline"  >{languages[lang].freelance}</h1>
+      <h1 className="text-4xl pt-10 flex flex-col items-center justify-center underline" >{languages[lang].freelance}</h1>
 
       <div className="my-5 flex flex-col items-center justify-center rounded-xl"> 
         <Image 
