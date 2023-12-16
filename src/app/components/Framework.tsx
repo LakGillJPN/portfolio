@@ -37,7 +37,7 @@ const ProjectFramework: React.FC<CommonProps> = ({
       <div className="flex items-center justify-center">
         <Image src={imageSrc} width={600} height={600} alt={`${title} screenshot`} />
       </div>
-      <div className="flex flex-wrap pt-5">{logos}</div>
+      <div className="flex-wrap gap-2 grid grid-cols-4 sm:grid-cols-8 pt-5">{logos}</div>
       <a href={githubUrl} target="_blank">
         <div className="border-2 border-solid flex justify-center items-center rounded-xl mx-auto m-10 p-3 hover:bg-slate-700 bg-slate-600">
           <GitHubLogo />
