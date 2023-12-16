@@ -32,7 +32,7 @@ const GamerTalk: React.FC<GamerTalkProps> = ({ text }) =>  {
       title="GamerTalk"
       font={offside.className}
       text={text}
-      url="https://gamertalk.onrender.com/"
+      url="https://frontend-gamertalk.vercel.app/"
       imageSrc="/images/Gamertalk-fullscreen.png"
       logos={logos}
       githubUrl="https://github.com/GamerTalk"
