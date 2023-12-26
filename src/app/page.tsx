@@ -33,14 +33,14 @@ export default function Home() {
         </h1>
       </div>
 
-      <h1 className="text-4xl p-10 flex flex-col items-center justify-center underline" id="projects">{languages[lang].projects}</h1>
+      <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center" id="projects">{languages[lang].projects}</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
       </div>
       
       <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl"> 
-      <h1 className="text-4xl mb-20 flex flex-col items-center justify-center underline" id="contributions">{languages[lang].freelance}</h1>
+      <h1 className="text-5xl font-bold mb-20 flex flex-col items-center justify-center" id="contributions">{languages[lang].freelance}</h1>
         <Image 
            src="/images/mamoru.png"
            width={70}
