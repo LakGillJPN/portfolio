@@ -17,25 +17,28 @@ export default function Home() {
   };
 
   return (
-    <div className="text-white">
-       <Header text="" changeFunc={changeLang} lang={lang}/>
-
-      <h1 className="text-5xl text-center font-bold mb-8 my-16 pb-5">
-        {lang === "Japanese" ? (
-          <span>
-            ラク ギル <br /> ポートフォリオ
-          </span>
+    <div className="text-white ">
+      <Header text="" changeFunc={changeLang} lang={lang}/>
+      <div className="flex-1 min-h-screen w-full flex justify-center items-center"> 
+        <h1 className="text-5xl text-center font-bold  mb-60  pb-5">
+          {lang === "Japanese" ? (
+            <span>
+              ラク ギル <br /> ポートフォリオ
+            </span>
           ) : (
             "Lak Gill Portfolio"
           )}
-      </h1>
+        </h1>
+      </div>
 
-      {/* <h1 className="text-4xl p-10 flex flex-col items-left underline j">PROJECTS</h1> */}
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl">
+      <div>
+      <h1 className="text-4xl p-10 flex flex-col items-left underline j">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl  ">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
       </div>
+     </div>
+
 
       <h1 className="text-4xl pt-10 flex flex-col items-center justify-center underline" >{languages[lang].freelance}</h1>
 
