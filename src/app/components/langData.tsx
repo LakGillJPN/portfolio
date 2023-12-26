@@ -14,7 +14,7 @@ const languages: Record<string, Language> = {
     button: '日本語',
     JLeague: "A game where users predict the results of upcoming J-League fixtures and earn points based on their accuracy." ,
     GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections.",
-    projects: "projects",
+    projects: "Projects",
     freelance: "Contributions",
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
     footer:  "Powered by Tailwind CSS & Next.JS" 
