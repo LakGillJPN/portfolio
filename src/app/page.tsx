@@ -17,9 +17,9 @@ export default function Home() {
   };
 
   return (
-    <div className="text-white ">
+    <div className="text-white">
       <Header text="" changeFunc={changeLang} lang={lang}/>
-      <div className="flex-1 min-h-screen w-full flex justify-center items-center"> 
+      <div className="flex flex-1 min-h-screen w-full justify-center items-center "> 
         <h1 className="text-5xl text-center font-bold  mb-60  pb-5">
           {lang === "Japanese" ? (
             <span>
@@ -28,21 +28,22 @@ export default function Home() {
           ) : (
             "Lak Gill Portfolio"
           )}
+       <a href="#projects"><p className="justify-center items-center border-2 text-2xl m-4">{languages[lang].project}</p></a> 
+       <a href="#contributions"><p className="justify-center items-center border-2 text-2xl m-4">{languages[lang].freelance}</p></a> 
+
+       contributions"
         </h1>
       </div>
 
-      <div>
-      <h1 className="text-4xl p-10 flex flex-col items-left underline j">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl  ">
+      <h1 className="text-4xl p-10 flex flex-col items-center justify-center underline" id="projects">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
       </div>
-     </div>
-
-
-      <h1 className="text-4xl pt-10 flex flex-col items-center justify-center underline" >{languages[lang].freelance}</h1>
-
-      <div className="my-5 flex flex-col items-center justify-center rounded-xl"> 
+     
+      
+      <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl"> 
+      <h1 className="text-4xl mb-20 border-2 flex flex-col items-center justify-center underline" id="contributions">{languages[lang].freelance}</h1>
         <Image 
            src="/images/mamoru.png"
            width={70}
@@ -54,6 +55,7 @@ export default function Home() {
         http://app.mamoru.earth</a>
         <p className="p-10"> {languages[lang].mamoru}</p>
 
+     
       </div>
 
       <Footer text={languages[lang].footer} />
