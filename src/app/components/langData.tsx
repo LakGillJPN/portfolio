@@ -5,6 +5,7 @@ type Language = {
   projects: string;
   freelance: string;
   mamoru: string;
+  mamoruDate: string;
   footer: string;
 };
 
@@ -16,6 +17,7 @@ const languages: Record<string, Language> = {
     GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections.",
     projects: "Projects",
     freelance: "Contributions",
+    mamoruDate: "Oct 2023 - Present",
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
     footer:  "Powered by Tailwind CSS & Next.JS" 
   },
@@ -25,6 +27,7 @@ const languages: Record<string, Language> = {
     GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。",
     projects: "プロジェクト",
     freelance: "フリーランスの仕事",
+    mamoruDate: "2023年10月～現在",
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
     footer: "Tailwind CSSとNext JSによって動作します"
   },
