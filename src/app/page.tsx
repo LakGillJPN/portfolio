@@ -28,8 +28,34 @@ export default function Home() {
           ) : (
             "Lak Gill Portfolio"
           )}
-       <a href="#projects"><p className="justify-center items-center border-2 text-2xl m-4 rounded-xl hover:bg-slate-700 bg-slate-600">{languages[lang].projects}</p></a> 
-       <a href="#contributions"><p className="justify-center items-center border-2 text-2xl m-4 rounded-xl hover:bg-slate-700 bg-slate-600">{languages[lang].freelance}</p></a>
+       {/* <a href="#projects"><p className="justify-center items-center border-2 text-2xl m-4 rounded-xl hover:bg-slate-700 bg-slate-600">{languages[lang].projects}</p></a> 
+       <a href="#contributions"><p className="justify-center items-center border-2 text-2xl m-4 rounded-xl hover:bg-slate-700 bg-slate-600">{languages[lang].freelance}</p></a> */}
+       <div className="text-2xl font-bold p-5 bg-grey-800 flex border-2 justify-center gap-2"> 
+        <a href="https://www.linkedin.com/in/lak-gill/" target="_blank">
+           <Image 
+            src="/images/li-logo-white.png"
+            width={50}
+            height={50}
+            alt="link to LinkedIn"
+            />
+        </a>
+        <a className="pl-4" href="https://www.twitter.com/LakGill88" target="_blank">
+          <Image 
+           src="/images/x-logo-white.png"
+           width={50}
+           height={50}
+           alt="link to X"
+          />
+        </a>
+        <a className="pl-4" href="https://github.com/LakGillJPN" target="_blank">
+          <Image 
+           src="/images/github-mark-white.png"
+           width={50}
+           height={50}
+           alt="link to github.png"
+          />
+        </a>
+    </div>
         </h1>
       </div>
 
