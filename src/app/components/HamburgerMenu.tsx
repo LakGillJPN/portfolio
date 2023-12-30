@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface HamburgerMenu {
   closeMenu: any;
@@ -6,9 +7,17 @@ interface HamburgerMenu {
 
 const HamburgerMenu: React.FC<HamburgerMenu> = ({ closeMenu }) => {
   return (
-    <div className="flex flex-col fixed top-0 left-0 w-{30%} text-2xl h-full p-5 box-border bg-slate-600">
-      <p className="border-2 bg-pink-600" onClick={closeMenu}>X</p>
-      <a href="#projects" className="border-2" onClick={closeMenu}>Projects</a>
+    <div className="flex flex-col fixed top-0 left-0 w-{30%} text-2xl h-full p-5 box-border bg-slate-600 gap-7 font-bold transition-all">
+      <p onClick={closeMenu} className="items-center align-center justify-center flex p-5"> 
+        <Image 
+            src="/images/x-mark-32.png"
+            width={50}
+            height={50}
+            alt="x logo"
+            className="border-2 rounded-3xl p-2 hover:bg-zinc-700"
+            />
+      </p>
+      <a href="#projects" onClick={closeMenu}>Projects</a>
       <a href="#contributions" onClick={closeMenu}>Contributions</a>
     </div>
   );
