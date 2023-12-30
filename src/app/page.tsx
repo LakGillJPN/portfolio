@@ -8,17 +8,28 @@ import JLeague from "./components/projects/JLeague";
 import GamerTalk from "./components/projects/GamerTalk";
 import languages from "./components/langData";
 import Header from "./components/Header";
+import HamburgerMenu from './components/HamburgerMenu'
 
 export default function Home() {
   const [lang, setLang] = useState<string>("English");
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const changeLang = () => {
     return lang === "English" ? setLang("Japanese") : setLang("English");
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="text-white">
-      <Header text="" changeFunc={changeLang} lang={lang}/>
+      <Header text="" changeFunc={changeLang} lang={lang} toggleMenu={toggleMenu}/>
+      {isMenuOpen && <HamburgerMenu closeMenu={closeMenu} />}
       <div className="flex flex-1 min-h-screen w-full justify-center items-center "> 
         <h1 className="text-5xl text-center font-bold  mb-60 pb-5">
           {lang === "Japanese" ? (
