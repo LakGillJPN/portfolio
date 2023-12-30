@@ -18,7 +18,9 @@ const Header: React.FC<HeaderProps> = ({text, changeFunc, lang} ) => {
       </button>
 
       <div className="text-2xl font-bold p-5 bg-grey-800 flex" > 
-        
+        <a href="#projects"><p className="justify-center items-center text-2xl m-4 rounded-xl">{languages[lang].projects}</p></a> 
+        <a href="#contributions"><p className="justify-center items-center  text-2xl m-4 rounded-xl">{languages[lang].freelance}</p></a>
+      
     </div>
      <div className="pl-10">  {text} </div>
   </> 
