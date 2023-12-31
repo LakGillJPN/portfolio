@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
       <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center" id="projects">{languages[lang].projects}</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
+      <div className="grid grid-cols-1 sm:grid-cols-3 px-2 gap-5 text-4xl ">
         <JLeague text={languages[lang].JLeague} />
         <GamerTalk text={languages[lang].GamerTalk} />
         <SakuraSignal text={languages[lang].SakuraSignal} />
