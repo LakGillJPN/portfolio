@@ -30,7 +30,7 @@ export default function Home() {
     <div className="text-white">
       <Header changeFunc={changeLang} lang={lang} toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu lang={lang} closeMenu={closeMenu} />}
-      <div className="flex flex-1 min-h-screen w-full justify-center items-center"> 
+      <div className="flex flex-1 min-h-screen w-full justify-center items-center" id="top"> 
         <h1 className="text-5xl text-center font-bold mb-60 pb-5">
           {lang === "Japanese" ? (
             <span>
@@ -47,7 +47,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="link to LinkedIn"
-              className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
+              className="border-2 p-3 rounded-3xl hover:bg-zinc-600"
             />
           </a>
           <a className="pl-4" href="https://www.twitter.com/LakGill88" target="_blank">
@@ -56,7 +56,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="link to X"
-              className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
+              className="border-2 p-3 rounded-3xl hover:bg-zinc-600"
             />
           </a>
           <a className="pl-4" href="https://github.com/LakGillJPN" target="_blank">
@@ -65,7 +65,7 @@ export default function Home() {
               width={80}
               height={80}
               alt="link to github.png"
-              className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
+              className="border-2 p-3 rounded-3xl hover:bg-zinc-600"
             />
           </a>
         </div>
