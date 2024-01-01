@@ -1,24 +1,23 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import Image from 'next/image';
 import languages from './langData';
 
 interface HeaderProps {
-  text: string;
   changeFunc: React.MouseEventHandler<HTMLButtonElement>;
   lang: string;
-  toggleMenu: any;
+  toggleMenu: MouseEventHandler;
 }
 
-const Header: React.FC<HeaderProps> = ({text, changeFunc, lang, toggleMenu} ) => {
+const Header: React.FC<HeaderProps> = ({changeFunc, lang, toggleMenu} ) => {
   return (
-    <>
+    <div className="sticky top-0 mb-10 pb-12 bg-zinc-700">
        <button
         onClick={changeFunc}
         className="text-white text-2xl font-bold p-3 border-2 rounded-xl absolute top-0 right-0 m-4 hover:bg-slate-700 bg-slate-600">
         {languages[lang].button}
       </button>
 
-      <div className="text-2xl font-bold p-5 bg-grey-800"> 
+      <div className="text-2xl font-bold p-5"> 
       <button
         onClick={toggleMenu}
         className="text-white text-2xl font-bold p-3 absolute top-0 left-0 m-4"
@@ -31,10 +30,8 @@ const Header: React.FC<HeaderProps> = ({text, changeFunc, lang, toggleMenu} ) =>
             className=""
             />
       </button> 
-      
     </div>
-     <div className="pl-10">  {text} </div>
-  </> 
+  </div> 
  )
 }
 
