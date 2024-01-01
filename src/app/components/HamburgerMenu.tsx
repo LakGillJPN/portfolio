@@ -14,7 +14,7 @@ const HamburgerMenu: React.FC<HamburgerMenu> = ({ closeMenu }) => {
             width={50}
             height={50}
             alt="x logo"
-            className="border-2 rounded-3xl p-2 hover:bg-zinc-700"
+            className="p-2"
             />
       </p>
       <a href="#projects" onClick={closeMenu}>Projects</a>

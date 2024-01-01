@@ -26,7 +26,7 @@ const languages: Record<string, Language> = {
     JLeague: "Jリーグの勝敗を予想し、ポイントを獲得するゲーム。",
     GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。",
     projects: "プロジェクト",
-    freelance: "フリーランスの仕事",
+    freelance: "フリーランス",
     mamoruDate: "2023年10月～現在",
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
     footer: "Tailwind CSSとNext JSによって動作します"

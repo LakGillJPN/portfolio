@@ -31,7 +31,7 @@ export default function Home() {
       <Header changeFunc={changeLang} lang={lang} toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu closeMenu={closeMenu} />}
       <div className="flex flex-1 min-h-screen w-full justify-center items-center"> 
-        <h1 className="text-5xl text-center font-bold  mb-60 pb-5">
+        <h1 className="text-5xl text-center font-bold mb-60 pb-5">
           {lang === "Japanese" ? (
             <span>
               ラク ギル <br /> ポートフォリオ
@@ -39,45 +39,47 @@ export default function Home() {
           ) : (
             "Lak Gill Portfolio"
           )}
-       {/* <a href="#projects"><p className="justify-center items-center border-2 text-2xl m-4 rounded-xl hover:bg-slate-700 bg-slate-600">{languages[lang].projects}</p></a> 
-       <a href="#contributions"><p className="justify-center items-center border-2 text-2xl m-4 rounded-xl hover:bg-slate-700 bg-slate-600">{languages[lang].freelance}</p></a> */}
-       <div className="p-5 flex justify-center gap-2"> 
-        <a href="https://www.linkedin.com/in/lak-gill/" target="_blank">
-           <Image 
-            src="/images/li-logo-white.png"
-            width={80}
-            height={80}
-            alt="link to LinkedIn"
-            className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
+
+        <div className="p-5 flex justify-center gap-2"> 
+          <a href="https://www.linkedin.com/in/lak-gill/" target="_blank">
+            <Image 
+              src="/images/li-logo-white.png"
+              width={80}
+              height={80}
+              alt="link to LinkedIn"
+              className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
             />
-        </a>
-        <a className="pl-4" href="https://www.twitter.com/LakGill88" target="_blank">
-          <Image 
-           src="/images/x-logo-white.png"
-           width={80}
-           height={80}
-           alt="link to X"
-           className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
-          />
-        </a>
-        <a className="pl-4" href="https://github.com/LakGillJPN" target="_blank">
-          <Image 
-           src="/images/github-mark-white.png"
-           width={80}
-           height={80}
-           alt="link to github.png"
-           className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
-          />
-        </a>
-    </div>
-        </h1>
+          </a>
+          <a className="pl-4" href="https://www.twitter.com/LakGill88" target="_blank">
+            <Image 
+              src="/images/x-logo-white.png"
+              width={80}
+              height={80}
+              alt="link to X"
+              className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
+            />
+          </a>
+          <a className="pl-4" href="https://github.com/LakGillJPN" target="_blank">
+            <Image 
+              src="/images/github-mark-white.png"
+              width={80}
+              height={80}
+              alt="link to github.png"
+              className="border-2 p-3 rounded-3xl hover:bg-zinc-700"
+            />
+          </a>
+        </div>
+      </h1>
       </div>
 
-      <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center" id="projects">{languages[lang].projects}</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
-        <JLeague text={languages[lang].JLeague} />
-        <GamerTalk text={languages[lang].GamerTalk} />
+      <div className="min-h-screen w-full" id="projects">
+        <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].projects}</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
+          <JLeague text={languages[lang].JLeague} />
+          <GamerTalk text={languages[lang].GamerTalk} />
+        </div>
       </div>
+
       
       <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl"> 
       <h1 className="text-5xl font-bold mb-20 flex flex-col items-center justify-center" id="contributions">{languages[lang].freelance}</h1>
