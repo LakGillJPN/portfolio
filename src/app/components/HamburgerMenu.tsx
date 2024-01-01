@@ -21,7 +21,7 @@ const HamburgerMenu: React.FC<HamburgerMenu> = ({ closeMenu, lang }) => {
       </p>
       <a href="#projects" onClick={closeMenu}>{languages[lang].projects}</a>
       <a href="#contributions" onClick={closeMenu}>{languages[lang].freelance}</a>
-      <a href="#top" onClick={closeMenu}><p className="text-sm absolute bottom-0 mb-10">{languages[lang].top}</p></a>
+      <a href="#top" onClick={closeMenu}><p className="text-sm absolute bottom-0 mb-20">{languages[lang].top}</p></a>
     </div>
   );
 };
