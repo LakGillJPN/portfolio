@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="text-white">
       <Header changeFunc={changeLang} lang={lang} toggleMenu={toggleMenu}/>
-      {isMenuOpen && <HamburgerMenu closeMenu={closeMenu} />}
+      {isMenuOpen && <HamburgerMenu lang={lang} closeMenu={closeMenu} />}
       <div className="flex flex-1 min-h-screen w-full justify-center items-center"> 
         <h1 className="text-5xl text-center font-bold mb-60 pb-5">
           {lang === "Japanese" ? (
