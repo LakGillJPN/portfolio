@@ -13,8 +13,8 @@ const HamburgerMenu: React.FC<HamburgerMenu> = ({ closeMenu, lang }) => {
       <p onClick={closeMenu} className="items-center align-center justify-center flex p-5"> 
         <Image 
             src="/images/x-mark-32.png"
-            width={50}
-            height={50}
+            width={40}
+            height={40}
             alt="x logo"
             className="p-2"
             />
