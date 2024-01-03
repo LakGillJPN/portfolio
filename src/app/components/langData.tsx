@@ -7,6 +7,7 @@ type Language = {
   freelance: string;
   mamoru: string;
   mamoruDate: string;
+  aboutMe: string;
   footer: string;
 };
 
@@ -21,6 +22,7 @@ const languages: Record<string, Language> = {
     freelance: "Contributions",
     mamoruDate: "Oct 2023 - Present",
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
+    aboutMe: "About Me",
     footer:  "Powered by Tailwind CSS & Next.JS" 
   },
   Japanese: {
@@ -32,6 +34,7 @@ const languages: Record<string, Language> = {
     freelance: "フリーランス",
     mamoruDate: "2023年10月～現在",
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
+    aboutMe: "私について",
     footer: "Tailwind CSSとNext JSによって動作します"
   },
 };
