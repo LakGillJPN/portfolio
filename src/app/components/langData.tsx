@@ -7,7 +7,12 @@ type Language = {
   freelance: string;
   mamoru: string;
   mamoruDate: string;
-  aboutMe: string;
+  aboutMeTitle: string;
+  aboutMe: {
+    intro: string;
+    codingSchool: string;
+    since: string;
+  };
   footer: string;
 };
 
@@ -22,7 +27,13 @@ const languages: Record<string, Language> = {
     freelance: "Contributions",
     mamoruDate: "Oct 2023 - Present",
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
-    aboutMe: "About Me",
+    aboutMeTitle: "About Me",
+    aboutMe: {
+      intro: "Hi! I’m Lak. I’m currently working as a frontend engineer in Sapporo, Hokkaido, Japan. I’m originally from London, UK.",
+      codingSchool: "I expertise in React/Next.JS and TypeScript/JavaScript. I honed my skills through an intensive 8-month Full Stack coding program, delving into various facets of web development such as Node, PostGreSQL, Firebase, and more.",
+      since: "Since graduating, I actively seek opportunities to enhance my skills, be it through challenging work assignments, personal projects, or contributions to open-source initiatives."
+
+    },
     footer:  "Powered by Tailwind CSS & Next.JS" 
   },
   Japanese: {
@@ -34,7 +45,12 @@ const languages: Record<string, Language> = {
     freelance: "フリーランス",
     mamoruDate: "2023年10月～現在",
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
-    aboutMe: "私について",
+    aboutMeTitle: "私について",
+    aboutMe: {
+      intro: "",
+      codingSchool: "",
+      since: ""
+    },
     footer: "Tailwind CSSとNext JSによって動作します"
   },
 };

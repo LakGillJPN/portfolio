@@ -94,8 +94,16 @@ export default function Home() {
         <a className="text-blue-500 underline" href="http://app.mamoru.earth" target="_blank">
         http://app.mamoru.earth</a>
         <p className="p-10"> {languages[lang].mamoru}</p>
+      </div>
 
-     
+      <div className="my-5 flex flex-col items-center justify-center min-h-screen rounded-xl"> 
+        <h1 className="text-5xl font-bold mb-10 flex flex-col items-center justify-center" id="aboutme">{languages[lang].aboutMeTitle}</h1>
+        <div className="border-1 w-3/4">
+          <p className="mb-5">{languages[lang].aboutMe.intro}</p>
+          <p className="mb-5">{languages[lang].aboutMe.codingSchool}</p>
+          <p className="mb-5">{languages[lang].aboutMe.since}</p>
+
+        </div>
       </div>
 
       <Footer text={languages[lang].footer} />
