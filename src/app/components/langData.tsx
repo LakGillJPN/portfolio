@@ -12,6 +12,7 @@ type Language = {
     intro: string;
     codingSchool: string;
     since: string;
+    final: string;
   };
   footer: string;
 };
@@ -31,7 +32,8 @@ const languages: Record<string, Language> = {
     aboutMe: {
       intro: "Hi! I’m Lak. I’m currently working as a frontend engineer in Sapporo, Hokkaido, Japan. I’m originally from London, UK.",
       codingSchool: "I expertise in React/Next.JS and TypeScript/JavaScript. I honed my skills through an intensive 8-month Full Stack coding program, delving into various facets of web development such as Node, PostGreSQL, Firebase, and more.",
-      since: "Since graduating, I actively seek opportunities to enhance my skills, be it through challenging work assignments, personal projects, or contributions to open-source initiatives."
+      since: "Since graduating, I actively seek opportunities to enhance my skills, be it through challenging work assignments, personal projects, or contributions to open-source initiatives.",
+      final: "Feel free to contact me on any of my social links above or email me here if you want to collaborate."
 
     },
     footer:  "Powered by Tailwind CSS & Next.JS" 
@@ -49,7 +51,8 @@ const languages: Record<string, Language> = {
     aboutMe: {
       intro: "",
       codingSchool: "",
-      since: ""
+      since: "",
+      final: ""
     },
     footer: "Tailwind CSSとNext JSによって動作します"
   },
