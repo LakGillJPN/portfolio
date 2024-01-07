@@ -98,18 +98,20 @@ export default function Home() {
 
       <div className="my-5 flex flex-col items-center justify-center min-h-screen rounded-xl"  id="aboutme"> 
         <h1 className="text-5xl font-bold mb-10 flex flex-col items-center justify-center">{languages[lang].aboutMeTitle}</h1>
-        <Image 
-           src="/images/Kaito_and_Me.JPG"
-           width={200}
-           height={380}
-           alt="Profile Pic"
-           className="mb-5"
-        />
-        <div className="border-1 w-3/4">
-          <p className="mb-5">{languages[lang].aboutMe.intro}</p>
-          <p className="mb-5">{languages[lang].aboutMe.codingSchool}</p>
-          <p className="mb-5">{languages[lang].aboutMe.since}</p>
-          <p className="mb-5">{languages[lang].aboutMe.final}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 p-5" style={{ gridTemplateColumns: '30% 70%' }}>
+          <Image 
+            src="/images/Kaito_and_Me.JPG"
+            width={250}
+            height={350}
+            alt="Profile Pic"
+            className="mb-5 mx-auto "
+          />
+          <div className="px-5">
+            <p className="mb-5">{languages[lang].aboutMe.intro}</p>
+            <p className="mb-5">{languages[lang].aboutMe.codingSchool}</p>
+            <p className="mb-5">{languages[lang].aboutMe.since}</p>
+            <p className="mb-5">{languages[lang].aboutMe.final}</p>
+          </div>
         </div>
       </div>
 
