@@ -96,9 +96,9 @@ export default function Home() {
         <p className="p-10"> {languages[lang].mamoru}</p>
       </div>
 
-      <div className="my-5 flex flex-col items-center justify-center min-h-screen rounded-xl"  id="aboutme"> 
-        <h1 className="text-5xl font-bold mb-10 flex flex-col items-center justify-center">{languages[lang].aboutMeTitle}</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 p-5" style={{ gridTemplateColumns: '30% 70%' }}>
+      <div className="my-5 flex flex-col items-center justify-center min-h-screen rounded-xl" id="aboutme"> 
+        <h1 className="text-5xl font-bold mb-5 flex flex-col items-center justify-center">{languages[lang].aboutMeTitle}</h1>
+        <div className="p-5" style={{ gridTemplateColumns: '30% 70%' }}>
           <Image 
             src="/images/Kaito_and_Me.JPG"
             width={250}
@@ -114,7 +114,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Footer text={languages[lang].footer} />
     </div> 
   );
