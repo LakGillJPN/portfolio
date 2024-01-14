@@ -27,10 +27,10 @@ export default function Home() {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white" id="top">
       <Header changeFunc={changeLang} lang={lang} toggleMenu={toggleMenu}/>
       {isMenuOpen && <HamburgerMenu lang={lang} closeMenu={closeMenu} />}
-      <div className="flex flex-1 min-h-screen w-full justify-center items-center" id="top"> 
+      <div className="flex flex-1 min-h-screen w-full justify-center items-center" > 
         <h1 className="text-5xl text-center font-bold mb-60 pb-5">
           {lang === "Japanese" ? (
             <span>
@@ -81,8 +81,8 @@ export default function Home() {
       </div>
 
       
-      <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl"> 
-      <h1 className="text-5xl font-bold mb-20 flex flex-col items-center justify-center" id="contributions">{languages[lang].freelance}</h1>
+      <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="contributions"> 
+      <h1 className="text-5xl font-bold mb-20 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
         <Image 
            src="/images/mamoru.png"
            width={70}
@@ -94,10 +94,26 @@ export default function Home() {
         <a className="text-blue-500 underline" href="http://app.mamoru.earth" target="_blank">
         http://app.mamoru.earth</a>
         <p className="p-10"> {languages[lang].mamoru}</p>
-
-     
       </div>
 
+      <div className="my-5 flex flex-col items-center justify-center min-h-screen rounded-xl" id="aboutme"> 
+        <h1 className="text-5xl font-bold mb-5 flex flex-col items-center justify-center">{languages[lang].aboutMeTitle}</h1>
+        <div className="p-5" style={{ gridTemplateColumns: '30% 70%' }}>
+          <Image 
+            src="/images/Kaito_and_Me.JPG"
+            width={250}
+            height={350}
+            alt="Profile Pic"
+            className="mb-5 mx-auto "
+          />
+          <div className="px-5">
+            <p className="mb-5">{languages[lang].aboutMe.intro}</p>
+            <p className="mb-5">{languages[lang].aboutMe.codingSchool}</p>
+            <p className="mb-5">{languages[lang].aboutMe.since}</p>
+            <p className="mb-5">{languages[lang].aboutMe.final}</p>
+          </div>
+        </div>
+      </div>
       <Footer text={languages[lang].footer} />
     </div> 
   );
