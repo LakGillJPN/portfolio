@@ -82,7 +82,7 @@ export default function Home() {
 
       
       <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="contributions"> 
-      <h1 className="text-5xl font-bold mb-20 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
+      <h1 className="text-5xl font-bold mb-10 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
         <Image 
            src="/images/mamoru.png"
            width={70}
