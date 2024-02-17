@@ -5,7 +5,7 @@ import React from 'react'
 export default function Tailwind() {
   return (
     <Image 
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" 
     width={50}
     height={50}
     alt="Tailwind CSS logo"
