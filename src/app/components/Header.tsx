@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({changeFunc, lang, toggleMenu} ) => {
       <div className="text-2xl font-bold p-5"> 
       <button
         onClick={toggleMenu}
-        className="text-white text-2xl font-bold p-3 absolute top-0 left-0 m-4"
+        className="text-whit font-bold p-3 absolute top-0 left-0 m-4"
       >
       <Image 
             src="/images/white-menu-bar.png"

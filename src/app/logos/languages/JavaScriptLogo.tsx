@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function TypeScriptLogo() {
+export default function JavaScriptLogo() {
   return (
     <Image    
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
