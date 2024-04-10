@@ -7,7 +7,7 @@ export default function DartLogo() {
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dart/dart-original.svg"      
     width={50}
     height={50}
-    alt="Python logo" 
+    alt="Dart logo" 
     style={{ margin: '0 10px', marginBottom: '10px'  }} 
     />
   )
