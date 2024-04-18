@@ -8,7 +8,8 @@ import JLeague from "./components/projects/JLeague";
 import GamerTalk from "./components/projects/GamerTalk";
 import languages from "./components/langData";
 import Header from "./components/Header";
-import HamburgerMenu from './components/HamburgerMenu'
+import HamburgerMenu from './components/HamburgerMenu';
+import TechStack from "./components/TechStack";
 
 export default function Home() {
   const [lang, setLang] = useState<string>("English");
@@ -72,6 +73,13 @@ export default function Home() {
       </h1>
       </div>
 
+      <div className="min-h-screen w-full " id="tech-stack">
+        <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].techStack}</h1>
+        <TechStack/>
+      </div>
+
+
+
       <div className="min-h-screen w-full" id="projects">
         <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].projects}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
@@ -82,7 +90,7 @@ export default function Home() {
 
       
       <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="contributions"> 
-      <h1 className="text-5xl font-bold mb-1npm0 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
+      <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
         <Image 
            src="/images/mamoru.png"
            width={70}

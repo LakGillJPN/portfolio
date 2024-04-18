@@ -19,6 +19,7 @@ const HamburgerMenu: React.FC<HamburgerMenu> = ({ closeMenu, lang }) => {
             className="p-2 border-2 bg-zinc-800 cursor-pointer"
             />
       </p>
+      <a href="#tech-stack" onClick={closeMenu}>{languages[lang].techStack}</a>
       <a href="#projects" onClick={closeMenu}>{languages[lang].projects}</a>
       <a href="#contributions" onClick={closeMenu}>{languages[lang].freelance}</a>
       <a href="#aboutme" onClick={closeMenu}>{languages[lang].aboutMeTitle}</a>
