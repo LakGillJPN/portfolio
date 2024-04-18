@@ -20,11 +20,16 @@ import ExpressLogo from "../logos/backend/ExpressLogo";
 import NodeJSLogo from "../logos/backend/NodeJSLogo";
 import FirebaseLogo from "../logos/misc/FirebaseLogo";
 import PostgresLogo from "../logos/datebase/PostgresLogo";
+//Testing
+import CypressLogo from "../logos/testing/CypressLogo";
+import JestLogo from "../logos/testing/JestLogo";
+import MochaLogo from "../logos/testing/Mocha";
+import JasmineLogo from "../logos/testing/JasmineLogo";
 
 const TechStack = () => {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div className="border-2 p-3 rounded-2xl flex flex-col justify-center items-center">
           <div className="text-2xl p-4 ">Languages</div>
           <div className="flex flex-row">
@@ -53,9 +58,9 @@ const TechStack = () => {
           </div>
         </div>
 
-        <div className="border-2 p-3 rounded-2xl flex flex-col justify-center items-center">
+        <div className="border-2 p-3 rounded-2xl flex flex-col sm:grid-row-2 justify-center items-center bg-slate-700">
           <div className="text-2xl p-4 ">Backend</div>
-          <div className="flex flex-row">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             <div className="mx-5 items-center flex flex-col justify-center content-center"> <DjnagoLogo/>Django</div>
             <div className="mx-5 items-center flex flex-col justify-center content-center" > <ExpressLogo/>Express</div>
             <div className="mx-5 items-center flex flex-col justify-center content-center" > <NodeJSLogo/>Node.js</div>
@@ -67,11 +72,10 @@ const TechStack = () => {
         <div className="border-2 p-3 rounded-2xl flex flex-col justify-center items-center">
           <div className="text-2xl p-4 ">Testing</div>
           <div className="flex flex-row">
-            <div className="mx-5 items-center flex flex-col justify-center content-center"> <DjnagoLogo/>Django</div>
-            <div className="mx-5 items-center flex flex-col justify-center content-center" > <ExpressLogo/>Express</div>
-            <div className="mx-5 items-center flex flex-col justify-center content-center" > <NodeJSLogo/>Node.js</div>
-            <div className="mx-5 items-center flex flex-col justify-center content-center" > <FirebaseLogo/>Firebase</div>
-            <div className="mx-5 items-center flex flex-col justify-center content-center" > <PostgresLogo/>PostGreSQL</div>
+            <div className="mx-5 items-center flex flex-col justify-center content-center"> <CypressLogo/>Cypress</div>
+            <div className="mx-5 items-center flex flex-col justify-center content-center" > <JestLogo/>Jest</div>
+            <div className="mx-5 items-center flex flex-col justify-center content-center"> <MochaLogo/>Mocha</div>
+            <div className="mx-5 items-center flex flex-col justify-center content-center" > <JasmineLogo/>Jasmine</div>
           </div>
         </div>
 
