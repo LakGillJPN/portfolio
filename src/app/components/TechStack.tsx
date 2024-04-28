@@ -13,6 +13,7 @@ import Tailwind from "../logos/frontend/Tailwind";
 //Frontend
 import ReactLogo from "../logos/frontend/ReactLogo";
 import NextJSLogo from "../logos/frontend/NextJSLogo";
+import ReactNativeLogo from "../logos/frontend/ReactNativeLogo";
 import Flutter from "../logos/frontend/Flutter";
 //Backend
 import DjnagoLogo from "../logos/backend/DjnagoLogo";
@@ -25,6 +26,8 @@ import CypressLogo from "../logos/testing/CypressLogo";
 import JestLogo from "../logos/testing/JestLogo";
 import MochaLogo from "../logos/testing/Mocha";
 import JasmineLogo from "../logos/testing/JasmineLogo";
+import AxiosLogo from "../logos/misc/AxiosLogo";
+
 
 interface TechStack {
   languages: string;
@@ -59,9 +62,10 @@ const TechStack: React.FC<TechStack> = ({ languages, styling, frontend, backend,
 
         <div className="border-2 p-3 rounded-2xl flex flex-col justify-center items-center bg-neutral-700">
           <div className="text-2xl p-4 font-bold pb-8 ">{frontend}</div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pb-5">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pb-5">
             <div className="mx-5 items-center flex flex-col justify-center content-center"> <ReactLogo/>React</div>
             <div className="mx-5 items-center flex flex-col justify-center content-center" > <NextJSLogo/>Next JS</div>
+            <div className="mx-5 items-center flex flex-col justify-center content-center" > <ReactNativeLogo/>React Native</div>
             <div className="mx-5 items-center flex flex-col justify-center content-center" > <Flutter/>Flutter</div>
           </div>
         </div>
@@ -88,8 +92,9 @@ const TechStack: React.FC<TechStack> = ({ languages, styling, frontend, backend,
 
         <div className="border-2 p-3 rounded-2xl flex flex-col justify-center items-center bg-neutral-700">
           <div className="text-2xl p-4 font-bold pb-8 ">Misc</div>
-          <div className="grid grid-cols-1 sm:grid-cols-1 gap-3 pb-5">
+          <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 pb-5">
             <div className="mx-5 items-center flex flex-col justify-center content-center" > <FirebaseLogo/>Firebase</div>
+            <div className="mx-5 items-center flex flex-col justify-center content-center" > <AxiosLogo/>Axios</div>
           </div>
         </div>
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import React from 'react'
 
-export default function FirebaseLogo() {
+export default function AxiosLogo() {
   return (
     <Image 
     src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" 
