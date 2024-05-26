@@ -81,6 +81,7 @@ export default function Home() {
           frontend={languages[lang].frontend} 
           backend={languages[lang].backend} 
           testing={languages[lang].testing} 
+          misc={languages[lang].misc} 
           />
       </div>
 
