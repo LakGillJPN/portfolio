@@ -4,6 +4,12 @@ type Language = {
   JLeague: string;
   GamerTalk: string;
   techStack: string;
+  languages: string;
+  styling: string;
+  frontend: string;
+  backend: string;
+  testing: string;
+  misc: string;
   projects: string;
   freelance: string;
   mamoru: string;
@@ -23,8 +29,14 @@ const languages: Record<string, Language> = {
   English: {
     button: '日本語',
     top: "Back To Top",
-    projects: "Projects",
     techStack: "Tech Stack",
+    languages: "Languages",
+    styling: "Styling",
+    projects: "Projects",
+    frontend: "Frontend",
+    backend: "Backend",
+    testing: "Testing",
+    misc: "Misc",
     JLeague: "A game where users predict the results of upcoming J-League fixtures and earn points based on their accuracy." ,
     GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections.",
     freelance: "Contributions",
@@ -45,6 +57,12 @@ const languages: Record<string, Language> = {
     top: "トップへ戻る",
     projects: "プロジェクト",
     techStack: "知識",
+    languages: "言語",
+    styling: "スタイル",
+    frontend: "フロントエンド",
+    backend: "バックエンド",
+    testing: "テスト",
+    misc: "その他",
     JLeague: "Jリーグの勝敗を予想し、ポイントを獲得するゲーム。",
     GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。",
     freelance: "フリーランス",

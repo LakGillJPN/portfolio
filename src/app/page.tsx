@@ -73,9 +73,16 @@ export default function Home() {
       </h1>
       </div>
 
-      <div className="min-h-screen w-full " id="tech-stack">
+      <div className="min-h-screen w-full pb-60" id="tech-stack">
         <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].techStack}</h1>
-        <TechStack/>
+        <TechStack 
+          languages={languages[lang].languages} 
+          styling={languages[lang].styling} 
+          frontend={languages[lang].frontend} 
+          backend={languages[lang].backend} 
+          testing={languages[lang].testing} 
+          misc={languages[lang].misc} 
+          />
       </div>
 
 
