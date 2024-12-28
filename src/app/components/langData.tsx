@@ -44,7 +44,7 @@ const languages: Record<string, Language> = {
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
     aboutMeTitle: "About Me",
     aboutMe: {
-      intro: "Hi! I’m Lak. I work as a Frontend Engineer in Sapporo, Hokkaido, Japan. I’m originally from London, UK.",
+      intro: "Hi! I’m Lak. I work as a Software Engineer in Sapporo, Hokkaido, Japan. I’m originally from London, UK.",
       codingSchool: "My expertise is React/Next.JS and TypeScript/JavaScript. I honed my skills through an intensive 8-month Full Stack coding program, delving into various facets of web development such as Node, PostgreSQL, Firebase, and more.",
       since: "Since graduating from the program, I have actively sought opportunities to enhance my skills through challenging work assignments, personal projects, or contributions to open-source initiatives.",
       final: "Feel free to contact me on any of my social links if you want to collaborate!"
@@ -70,7 +70,7 @@ const languages: Record<string, Language> = {
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
     aboutMeTitle: "プロフィール",
     aboutMe: {
-      intro: "こんにちは！ラクです。現在、北海道の札幌でフロントエンドエンジニアとして働いています。出身はイギリスのロンドンです。",
+      intro: "こんにちは！ラクです。現在、北海道の札幌でソフトウェア開発エンジニアはイギリスのロンドンです。",
       codingSchool: "8ヶ月間のフルスタックコーディングプログラムを卒業し、Node、PostGreSQL、Firebaseなど、ウェブ開発の様々なことを学びました。",
       since: "卒業後は、やりがいのある仕事、個人的なプロジェクト、オープンソースプロジェクトへの貢献などを通じて、自分のスキルを向上させることに努めてきました。",
       final: "コラボレーションを希望される方は、上記の私のソーシャルリンクのいずれかにお気軽にご連絡ください。"

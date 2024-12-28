@@ -87,7 +87,7 @@ export default function Home() {
 
 
 
-      <div className="min-h-screen w-full" id="projects">
+      <div className="min-h-screen mb-20 w-full" id="projects">
         <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].projects}</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
           <JLeague text={languages[lang].JLeague} />
@@ -97,7 +97,7 @@ export default function Home() {
 
       
       {/* <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="contributions"> 
-      <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
+      {/* <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].freelance}</h1>
         <Image 
            src="/images/mamoru.png"
            width={70}
@@ -108,10 +108,10 @@ export default function Home() {
         <p>{languages[lang].mamoruDate}</p>
         <a className="text-blue-500 underline" href="http://app.mamoru.earth" target="_blank">
         http://app.mamoru.earth</a>
-        <p className="p-10"> {languages[lang].mamoru}</p>
-      </div> */}
+        <p className="p-10"> {languages[lang].mamoru}</p> */}
+      {/* </div> */} 
 
-      <div className="my-5 mt-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="aboutme"> 
+      <div className="py-40 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="aboutme"> 
         <h1 className="text-5xl font-bold mb-5 flex flex-col items-center justify-center">{languages[lang].aboutMeTitle}</h1>
         <div className="p-5" style={{ gridTemplateColumns: '30% 70%' }}>
           <Image 
