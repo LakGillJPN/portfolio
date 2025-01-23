@@ -2,12 +2,14 @@
 
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Offside, Poppins } from 'next/font/google'
+import { Inter, Offside, Poppins, Oswald } from 'next/font/google'
 import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
 export const offside = Offside({ subsets: ['latin'], weight:['400']})
 export const poppins = Poppins({ subsets: ['latin'], weight:['400']})
+export const oswald = Oswald({ subsets: ['latin'], weight:['400']})
+
 
 export const jleague = localFont({
   src: [

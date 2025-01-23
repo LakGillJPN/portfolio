@@ -3,6 +3,7 @@ type Language = {
   top: string;
   JLeague: string;
   GamerTalk: string;
+  MusicVue: string;
   techStack: string;
   languages: string;
   styling: string;
@@ -39,6 +40,7 @@ const languages: Record<string, Language> = {
     misc: "Misc",
     JLeague: "A game where users predict the results of upcoming J-League fixtures and earn points based on their accuracy." ,
     GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections.",
+    MusicVue: "A simple search engine for albums using the Discogs API.",
     freelance: "Contributions",
     mamoruDate: "Oct 2023 - Jan 2024",
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
@@ -65,6 +67,7 @@ const languages: Record<string, Language> = {
     misc: "その他",
     JLeague: "Jリーグの勝敗を予想し、ポイントを獲得するゲーム。",
     GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。",
+    MusicVue: "Discogs APIを使用したアルバム検索エンジン。",
     freelance: "フリーランス",
     mamoruDate: "2023年10月～2024年1月",
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",

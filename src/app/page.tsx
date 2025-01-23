@@ -10,6 +10,7 @@ import languages from "./components/langData";
 import Header from "./components/Header";
 import HamburgerMenu from './components/HamburgerMenu';
 import TechStack from "./components/TechStack";
+import MusicVue from "./components/projects/MusicVue";
 
 export default function Home() {
   const [lang, setLang] = useState<string>("English");
@@ -89,9 +90,10 @@ export default function Home() {
 
       <div className="min-h-screen mb-20 w-full" id="projects">
         <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].projects}</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 px-2 gap-5 text-4xl ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-2 gap-5 text-4xl ">
           <JLeague text={languages[lang].JLeague} />
           <GamerTalk text={languages[lang].GamerTalk} />
+          <MusicVue text={languages[lang].MusicVue} />
         </div>
       </div>
 
