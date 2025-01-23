@@ -89,13 +89,16 @@ export default function Home() {
 
 
       <div className="min-h-screen mb-20 w-full" id="projects">
-        <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">{languages[lang].projects}</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-2 gap-5 text-4xl ">
-          <JLeague text={languages[lang].JLeague} />
-          <GamerTalk text={languages[lang].GamerTalk} />
-          <MusicVue text={languages[lang].MusicVue} />
-        </div>
-      </div>
+  <h1 className="text-3xl md:text-5xl font-bold p-10 text-center">
+    {languages[lang].projects}
+  </h1>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mx-auto">
+    <JLeague text={languages[lang].JLeague} />
+    <GamerTalk text={languages[lang].GamerTalk} />
+    <MusicVue text={languages[lang].MusicVue} />
+  </div>
+</div>
+
 
       
       {/* <div className="my-5 flex flex-col items-center justify-center min-h-screen w-full rounded-xl" id="contributions"> 
