@@ -16,6 +16,11 @@ type Language = {
   mamoru: string;
   mamoruDate: string;
   aboutMeTitle: string;
+  certificates: string;
+  JLPT:string;
+  JLPTDate:string;
+  AWS:string;
+  AWSDate:string;
   aboutMe: {
     intro: string;
     codingSchool: string;
@@ -44,6 +49,11 @@ const languages: Record<string, Language> = {
     freelance: "Contributions",
     mamoruDate: "Oct 2023 - Jan 2024",
     mamoru: "mamoru is a sustainable living app that helps you discover and save on sustainable products, shops, cafes, restaurants, and more.",
+    certificates: "Certificates",
+    JLPT: "Japanese Language Proficiency Test (N2)",
+    JLPTDate: "Date Issued: January 2022",
+    AWS: "AWS Certified Cloud Practitioner",
+    AWSDate: "Date Issued: January 2025",
     aboutMeTitle: "About Me",
     aboutMe: {
       intro: "Hi! I’m Lak. I work as a Software Engineer in Sapporo, Hokkaido, Japan. I’m originally from London, UK.",
@@ -71,6 +81,11 @@ const languages: Record<string, Language> = {
     freelance: "フリーランス",
     mamoruDate: "2023年10月～2024年1月",
     mamoru: "mamoru（まもる）は、サステナブルな商品、ショップ、カフェ、レストランなどを発見し、お得に利用することができる サステナブルライフアプリです。",
+    certificates: "資格",
+    JLPT: "日本語能力試験2級",
+    JLPTDate: "発行日:2022年1月",
+    AWS: "AWS認定クラウドプラクティショナー",
+    AWSDate: "発行日:2025年1月",
     aboutMeTitle: "プロフィール",
     aboutMe: {
       intro: "こんにちは！ラクです。現在、北海道の札幌でソフトウェア開発エンジニアはイギリスのロンドンです。",
