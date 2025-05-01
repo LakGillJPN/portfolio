@@ -106,21 +106,20 @@ export default function Home() {
           {languages[lang].certificates}
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 mx-auto">
+            {/* JLPT Certificate */}
+            <CertificateCard
+            imageSrc="/images/JLPT-logo.png"
+            altText="JLPT Certificate"
+            title={languages[lang].JLPT}
+            dateIssued={languages[lang].JLPTDate}
+            imageClassName="mb-5 mx-auto border-4 border-black bg-white rounded-3xl p-3"
+          />
           {/* AWS Certificate */}
           <CertificateCard
             imageSrc="/images/cloud-practitioner.png"
             altText="AWS Cloud Certificate"
-            title="AWS Certified Cloud Practitioner"
-            dateIssued="Date Issued: January 2025"
-            imageClassName="mb-5 mx-auto"
-          />
-
-          {/* JLPT Certificate */}
-          <CertificateCard
-            imageSrc="/images/JLPT-logo.png"
-            altText="JLPT Certificate"
-            title="Japanese Language Proficiency Test (N2)"
-            dateIssued="Date Issued: December 203"
+            title={languages[lang].AWS}
+            dateIssued={languages[lang].AWSDate}
             imageClassName="mb-5 mx-auto"
           />
         </div>
