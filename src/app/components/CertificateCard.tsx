@@ -1,6 +1,5 @@
 // components/CertificateCard.tsx
 import Image from "next/image";
-import languages from "./langData";
 
 interface CertificateCardProps {
   imageSrc: string;
