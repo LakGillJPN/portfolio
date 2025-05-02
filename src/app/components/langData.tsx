@@ -23,9 +23,9 @@ type Language = {
   AWSDate:string;
   aboutMe: {
     intro: string;
-    codingSchool: string;
-    since: string;
-    final: string;
+    expertise: string;
+    experience: string;
+    contact: string;
   };
   footer: string;
 };
@@ -57,10 +57,9 @@ const languages: Record<string, Language> = {
     aboutMeTitle: "About Me",
     aboutMe: {
       intro: "Hi! I’m Lak. I work as a Software Engineer in Sapporo, Hokkaido, Japan. I’m originally from London, UK.",
-      codingSchool: "My expertise is React/Next.JS and TypeScript/JavaScript. I honed my skills through an intensive 8-month Full Stack coding program, delving into various facets of web development such as Node, PostgreSQL, Firebase, and more.",
-      since: "Since graduating from the program, I have actively sought opportunities to enhance my skills through challenging work assignments, personal projects, or contributions to open-source initiatives.",
-      final: "Feel free to contact me on any of my social links if you want to collaborate!"
-
+      expertise: "I specialize in building modern web and mobile applications using React, Next.js, and TypeScript. In my current role, I’ve worked on cross-platform apps with React Native and Flutter, and developed internal tools with VB and C# to automate workflows and handle large datasets.",
+      experience: "I’ve led frontend development for admin dashboards and client-facing sites, integrating with Java, Laravel, and MySQL backends. I focus on delivering responsive, high-performance applications that offer smooth user experiences.",
+      contact: "I’m always open to new opportunities and collaborations—feel free to contact me through any of my social links!"
     },
     footer:  "Powered by Tailwind CSS & Next.JS" 
   },
@@ -88,11 +87,11 @@ const languages: Record<string, Language> = {
     AWSDate: "発行日:2025年1月",
     aboutMeTitle: "プロフィール",
     aboutMe: {
-      intro: "こんにちは！ラクです。現在、北海道の札幌でソフトウェア開発エンジニアはイギリスのロンドンです。",
-      codingSchool: "8ヶ月間のフルスタックコーディングプログラムを卒業し、Node、PostGreSQL、Firebaseなど、ウェブ開発の様々なことを学びました。",
-      since: "卒業後は、やりがいのある仕事、個人的なプロジェクト、オープンソースプロジェクトへの貢献などを通じて、自分のスキルを向上させることに努めてきました。",
-      final: "コラボレーションを希望される方は、上記の私のソーシャルリンクのいずれかにお気軽にご連絡ください。"
-    },
+      intro: "こんにちは！ラクギルです。北海道札幌市でソフトウェアエンジニアとして働いています。出身はイギリス・ロンドンです。",
+      expertise: "React、Next.js、TypeScript を用いたモダンな Web・モバイルアプリの開発を得意としています。現在の職場では、React Native や Flutter を使ったクロスプラットフォームアプリの開発や、VB や C# を使った業務効率化ツールの作成などに携わっています。",
+      experience: "Java、Laravel、MySQL を使用したバックエンドと連携した管理画面やクライアント向けサイトのフロントエンド開発をリードしてきました。レスポンシブかつ高パフォーマンスなアプリケーションの提供を重視しています。",
+      contact: "新しい機会やコラボレーションは常に歓迎しています。お気軽にソーシャルリンクからご連絡ください！"
+    },  
     footer: "Tailwind CSSとNext JSによって動作します"
   },
 };

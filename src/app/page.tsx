@@ -142,9 +142,9 @@ export default function Home() {
           />
           <div className="px-5">
             <p className="mb-5">{languages[lang].aboutMe.intro}</p>
-            <p className="mb-5">{languages[lang].aboutMe.codingSchool}</p>
-            <p className="mb-5">{languages[lang].aboutMe.since}</p>
-            <p className="mb-5">{languages[lang].aboutMe.final}</p>
+            <p className="mb-5">{languages[lang].aboutMe.expertise}</p>
+            <p className="mb-5">{languages[lang].aboutMe.experience}</p>
+            <p className="mb-5">{languages[lang].aboutMe.contact}</p>
           </div>
         </div>
       </div>

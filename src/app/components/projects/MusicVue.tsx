@@ -30,9 +30,6 @@ const MusicVue: React.FC<MusicVueProps> = ({ text }) =>  {
 
   const url = "https://main.d3czapi2n2hdbn.amplifyapp.com/";
 
-  // Split the URL where you want to add the break
-  const parts = url.split("d3czapi2n2hdbn.");
-
   return (
     <ProjectFramework 
       title="MusicVue"
