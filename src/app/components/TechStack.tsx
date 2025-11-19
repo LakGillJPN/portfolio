@@ -1,5 +1,12 @@
 import React from "react";
 
+
+interface TechStackProps {
+  professionalExperience: string;
+  personalProjects: string;
+}
+
+
 // Professional Experience Logos
 
 import TypeScriptLogo from "../logos/languages/TypeScriptLogo";
@@ -20,6 +27,7 @@ import Dart from "../logos/languages/Dart";
 import ExpressLogo from "../logos/backend/ExpressLogo";
 import NodeJSLogo from "../logos/backend/NodeJSLogo";
 import PostgresLogo from "../logos/datebase/PostgresLogo";
+import MongoLogo from "../logos/datebase/MongoLogo";
 import CypressLogo from "../logos/testing/CypressLogo";
 import JestLogo from "../logos/testing/JestLogo";
 import MochaLogo from "../logos/testing/Mocha";
@@ -27,6 +35,7 @@ import JasmineLogo from "../logos/testing/JasmineLogo";
 import AxiosLogo from "../logos/misc/AxiosLogo";
 import JavaLogo from "../logos/languages/JavaLogo";
 import SpringLogo from "../logos/backend/SpringLogo";
+import languages from "./langData";
 
 // Unused (may edit in later)
 
@@ -59,17 +68,20 @@ const personalProjectsLogos = [
   //{ name: "Express", logo: <ExpressLogo /> },
   //{ name: "Node.js", logo: <NodeJSLogo /> },
   { name: "PostgreSQL", logo: <PostgresLogo /> },
+  { name: "MongoDB", logo: <MongoLogo /> },
   { name: "Cypress", logo: <CypressLogo /> },
   { name: "Jest", logo: <JestLogo /> },
   { name: "Mocha", logo: <MochaLogo /> },
   { name: "Jasmine", logo: <JasmineLogo /> },
-  { name: "Axios", logo: <AxiosLogo /> },
  
 ];
 
-const TechStack: React.FC = () => {
+export const TechStack = ({
+  professionalExperience,
+  personalProjects,
+}: TechStackProps) => {
   const renderLogos = (logos: typeof professionalExperienceLogos) => (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 mt-4">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 mt-4 mb-4 ">
       {logos.map((item) => (
         <div
           key={item.name}
@@ -84,10 +96,10 @@ const TechStack: React.FC = () => {
 
   return (
     <div className="px-10 py-6">
-      <h2 className="text-2xl text-center font-semibold">Professional Experience</h2>
+        <h2 className="text-2xl text-center font-semibold mb-2 underline">{professionalExperience}</h2>
       {renderLogos(professionalExperienceLogos)}
 
-      <h2 className="text-2xl text-center font-semibold mt-8">Personal Projects & Learning</h2>
+      <h2 className="text-2xl text-center font-semibold mb-2 mt-10 underline">{personalProjects}</h2>
       {renderLogos(personalProjectsLogos)}
     </div>
   );

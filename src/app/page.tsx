@@ -87,7 +87,10 @@ export default function Home() {
         <h1 className="text-5xl font-bold p-10 flex flex-col items-center justify-center">
           {languages[lang].techStack}
         </h1>
-        <TechStack />
+        <TechStack 
+        professionalExperience={languages[lang].professionalExperience}
+        personalProjects={languages[lang].personalProjects}
+        />
       </div>
 
       <div className="min-h-screen mb-20 w-full" id="projects">

@@ -12,6 +12,8 @@ type Language = {
   testing: string;
   misc: string;
   projects: string;
+  professionalExperience: string;
+  personalProjects: string;
   freelance: string;
   mamoru: string;
   mamoruDate: string;
@@ -42,6 +44,8 @@ const languages: Record<string, Language> = {
     frontend: "Frontend",
     backend: "Backend",
     testing: "Testing",
+    personalProjects: "Personal Projects",
+    professionalExperience: "Professional Experience",
     misc: "Misc",
     JLeague: "A game where users predict the results of upcoming J-League fixtures and earn points based on their accuracy." ,
     GamerTalk: "An application that allows gamers to connect with each other with the goal of building connections.",
@@ -74,6 +78,8 @@ const languages: Record<string, Language> = {
     backend: "バックエンド",
     testing: "テスト",
     misc: "その他",
+    professionalExperience: "実務経験",
+    personalProjects: "個人プロジェクト",
     JLeague: "Jリーグの勝敗を予想し、ポイントを獲得するゲーム。",
     GamerTalk: "ゲーマーをつないで語学を学ぶソーシャル・ネットワーキング・アプリ。",
     MusicVue: "Discogs APIを使用したアルバム検索エンジン。",
